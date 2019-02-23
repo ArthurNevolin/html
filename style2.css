@@ -1,0 +1,621 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;                               /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline;          /* приводим все к одной базовой линии */
+    background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+}
+input, select, button, textarea {
+    margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+    font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+    outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+}
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+    min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+    color: #000;
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height:100%;
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+    color: #e6618c;
+    text-decoration: underline;
+}
+a:hover {
+    color: #fdf208;
+    text-decoration:none;
+}
+a:focus, a:active {
+    color: #c83867;
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+img{
+
+    max-width:100%;
+}
+.clr{
+    clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+#center-block-main{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+#header-top{
+    padding: 30px 0;
+    border-bottom: 1px solid #eee ;
+}
+
+#logo{
+    float: left;
+    font-size: 1.375em;
+    font-family: Roboto;
+
+}
+#contackt-basket{
+    float: right;
+}
+#contackt-basket p{
+    float: left;
+    font-size: 0.75em;
+    font-weight: 600;
+}
+#header-basket{
+    padding: 7px 25px ;
+    border: 1px solid #eee;
+    margin-left: 20px ;
+}
+
+#header-phone{
+    padding-top: 7px;
+}
+.material-icons{
+    vertical-align: middle;
+}
+#header-bottom{
+    padding: 10px 0 ;
+}
+
+.menu{
+    float: left;
+}
+
+#search-block{
+    float: left;
+}
+.menu li{
+    float: left;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    margin-right: 30px;
+}
+a{
+    text-decoration: none;
+}
+.wtf{
+font-size: 0.875em;
+    color: #7e7f84;
+    border: none;
+    margin: 5px 0 0 5px;
+    float: left;
+
+
+}
+::-webkit-input-placeholder {
+    color: red;
+}
+#search-block{
+    margin-top: -6px;
+}
+.qwe{
+    float: left;
+    margin: 5px 0 0 0;
+}
+
+
+                                    /*SLIDER!!!*/
+
+ #imgAndText{
+     max-width: 1170px;
+     max-height: 680px;
+     margin: 0 auto;
+     background-image: url("slide1.jpg");
+     background-position: center center;
+     background-repeat: no-repeat;
+ }
+
+#slider-text p:nth-of-type(1){
+    color: red;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-top: 210px;
+}
+#slider-text p:nth-of-type(2){
+    color: red;
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding-left: 30px;
+
+}
+
+#slider-text p:nth-of-type(3){
+    padding: 0 0 300px 30px;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    color: red;
+
+}
+
+                                /*SECTION 2*/
+#section2{
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#Afirst{
+    float: left;
+    width: 31.6%;
+    padding-top: 20px;
+
+}
+#Asecond{
+    float: left;
+    width: 31.6%;
+    padding-left: 2.5%;
+    padding-top: 20px;
+}
+#Athird{
+    float: left;
+    width: 31.6%;
+    padding-left: 2.5%;
+    padding-top: 20px;
+}
+#section2 h2{
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: red;
+    font-size: 1.375em;
+}
+
+#section2 p{
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+
+}
+#section2 img{
+    display: block;
+    margin: 0 auto;
+}
+
+
+                                    /*SECTION 3*/
+
+#section3{
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#section3 article{
+    float: left;
+        width: 23%;
+    margin-left: 2.66%;
+
+}
+#section3 article:nth-child(1){
+    margin-left: 0;
+}
+#section3 div:nth-child(1){
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+#section3B{
+    margin: 25px 5px ;
+    border-top: 1px solid lightgray;
+    line-height: 25px;
+}
+#articleBorder{
+    margin: -4px 0 0 0;
+    border: 1px solid lightgray;
+    border-top: none;
+    padding: 5px;
+    }
+/*Стили для рамок текста под фото*/
+#A1first #articleBorder{
+    border-left: none ;
+    }
+#A1fourth #articleBorder{
+    border-right: none ;
+
+}
+/*Стили для текста и картинки с плюсиком*/
+#articleBorder h3{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: bold;
+}
+#section3B p {
+    float: left;
+}
+#section3B img{
+    float: right;
+
+}
+#section3B{
+    padding-top: 5px;
+}
+
+#articleBorder >h3,h4,p{
+    padding-left: 5px;
+    color: #67686d;
+}
+#articleBorder > h3{
+    font-size: 1.125em;
+}
+#articleBorder >h4{
+    font-size: 0.875em;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+#articleBorder > p{
+    font-size: 0.8em;
+    margin-bottom: 15px;
+}
+#section3B >p{
+    font-size: 1em;
+    color: red
+}
+#section3B > img{
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+
+                                            /*Section4*/
+#s4content{
+    max-width: 1170px;
+    margin: 0 auto;
+
+}
+
+#map{
+    float: right;
+    width: 34%;
+    padding-top: 99px;
+    padding-right: 0;
+}
+#s4text{
+    width: 58%;
+    padding: 2%; float: left;
+    line-height: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#s4text h4{
+    font-size: 1.4em;
+    padding-top: 50px;
+
+}
+
+#s4text p{
+    font-size: 1.1em;
+    padding-top: 30px;
+    font-style: italic;
+}
+
+
+
+#mapwrapper{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+#map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+                                                        /*section5*/
+
+#s5Content{
+    padding: 15px 0 0 15px ;
+    background-color: #f45a40;
+}
+#s5Text{
+    float: left;
+    margin: 23px 0 20px 20px;
+    font-size: 1.325em;
+}
+#s5Input{
+    float: right;
+    margin-bottom: 20px;
+}
+
+#s5Input input:nth-of-type(1){
+    margin: 20px 0 20px 0;
+    font-size: 1.2em;
+    width: 200px;
+    border: none;
+}
+
+#s5Input input:nth-of-type(2){
+    font-size: 0.875em;
+}
+                                                        /*SECTION6*/
+footer{
+    background-color: #2a2d34 ;
+    padding: 40px 0;
+}
+#s6wrapper{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+#S6{
+    width: 23%;
+    margin-left: 2.66%;
+    float: left;
+}
+#S6:nth-of-type(1){
+    margin-left: 0;
+}
+#S6 a{
+    color: #f45a40;
+}
+#S6 h2{
+    color: #fff;
+    font-size: 1.125em;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#S6 p{
+    font-size: 0.875em;
+    margin-bottom: 20px;
+}
+#S6 h3{
+    font-size: 0.875em;
+    margin-bottom: 5px;
+}
+#S6 h3 a{
+     color: #fff;
+ }
+#S6 h3 a:hover{
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+.support a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.support{
+    float: left;
+    width: 20%;
+    margin-left: 30px;
+}
+.non{
+    margin-left: 0;
+}
+
+#S6 input:nth-child(2){
+    width: 100%;
+    font-size: 0.75em;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 5px 0;
+}
+#S6 textarea:nth-child(3){
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    }
+
+#S6 input:nth-child(4){
+    border: none;
+    font-size: 0.875em;
+    background-color: #f45a40;
+    padding: 7px 20px;
+    color: #fff;
+    cursor: pointer;
+    width: 100% ;
+box-sizing: border-box}
+
+                                                /*MEDIA adaptive making*/
+
+@media screen and (max-width: 1100px) {
+    #map {
+        width: 100%;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+    #mapwrapper {
+        padding-bottom: 50%;
+    }
+
+    #s4text {
+        width: 100%;
+        text-align: center;
+        padding: 2%;
+        float: left;
+        line-height: 50px;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+    }
+
+    #S6 {
+        width: 28%;
+
+    }
+
+    #S6:nth-of-type(1) {
+        margin-left: 40px;
+    }
+
+    #S6:nth-last-of-type(1) {
+        float: none;
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        padding-top: 260px;
+    }
+}
+
+ 
+    @media screen and (max-width:800px ) {
+    #logo{
+        float: none;
+        text-align: center;
+
+    }
+        #contackt-basket{
+            float: none;
+            text-align: center;
+        }
+        #contackt-basket p{
+            float: none;
+            display: inline-block;
+            margin-top: 10px;
+
+        }
+        #header-phone{
+            padding: 7px 25px ;
+            border: 1px solid #eee;
+        }
+        #Afirst{
+            float: none;
+            width: 100%;
+            padding-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        #Asecond{
+            float: none;
+            width: 100%;
+            padding-left: 2.5%;
+            padding-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #Athird{
+            float: none;
+            width: 100%;
+            padding-left: 2.5%;
+            padding-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #section2 img{
+            width: 80%;
+        }
+
+        #section3 >div:nth-of-type(1){
+            font-size: 2em;
+        }
+        #section3 article{
+            float: left;
+            width: 70%;
+            margin-left: 17% ;
+            box-sizing: border-box;
+
+        }
+        .tru{
+            width: 95%;
+        }
+
+        #section3 article:nth-child(1){
+            margin-left: 17%;
+    }
+        #articleBorder{
+            width: 92%;
+
+        }
+        #A1first #articleBorder{
+            border-left: 1px solid lightgray  ;
+        }
+        #A1fourth #articleBorder{
+            border-right: 1px solid lightgray  ;}
+
+
+        .menu{
+            width: 100%;
+            float: none;
+        }
+.menu li:nth-of-type(1){
+
+}
+        #search-block{
+            float: none;
+            margin-left: 35%;
+            box-sizing: border-box;
+
+        }
+        #header-bottom{
+            margin-left: 20%;
+        }
+    }
